@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing - Momentum Learning Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-[72px]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<a href="/" class="text-2xl font-display font-bold text-primary tracking-tight">Momentum</a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="features.html">Features</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="pricing.html">Pricing</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="about.html">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-primary font-semibold hover:text-primary/80 transition-colors" onclick="window.location.href='login.html'">Log in</button>
+<button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" onclick="window.location.href='signup.html'">Get Started</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-24 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
+<h1 class="font-h1 text-h1 text-primary mb-md">Invest in Academic Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">Simple, transparent pricing designed to scale with your educational institution. Choose the plan that fits your progress.</p>
+</section>
+<!-- Pricing Cards -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Starter Plan -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
+<h2 class="font-h3 text-h3 text-primary mb-sm">Starter</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">For independent educators and small cohorts.</p>
+<div class="mb-lg">
+<span class="font-h2 text-h2 text-primary">Free</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/forever</span>
+</div>
+<ul class="flex-grow space-y-sm mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Up to 50 active students</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Basic course builder</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Standard analytics</span>
+</li>
+</ul>
+<button class="w-full font-label-md text-label-md bg-transparent border border-primary text-primary px-sm py-base rounded hover:bg-surface-container transition-colors duration-200">Start Free</button>
+</div>
+<!-- Professional Plan -->
+<div class="bg-primary border border-primary rounded-xl p-lg shadow-md relative transform md:-translate-y-4 flex flex-col">
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary text-on-secondary font-label-sm text-label-sm px-sm py-xs rounded-full">Most Popular</div>
+<h2 class="font-h3 text-h3 text-on-primary mb-sm">Professional</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-md">For growing academies and dedicated institutions.</p>
+<div class="mb-lg">
+<span class="font-h2 text-h2 text-on-primary">$79</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">/month</span>
+</div>
+<ul class="flex-grow space-y-sm mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Unlimited active students</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Advanced course builder &amp; logic</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Comprehensive analytics &amp; reporting</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Priority email support</span>
+</li>
+</ul>
+<button class="w-full font-label-md text-label-md bg-surface-container-lowest text-primary px-sm py-base rounded hover:bg-surface-container transition-colors duration-200">Start Free Trial</button>
+</div>
+<!-- Enterprise Plan -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
+<h2 class="font-h3 text-h3 text-primary mb-sm">Enterprise</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Customized solutions for universities and large districts.</p>
+<div class="mb-lg">
+<span class="font-h2 text-h2 text-primary">Custom</span>
+</div>
+<ul class="flex-grow space-y-sm mb-lg">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Custom integrations &amp; APIs</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dedicated success manager</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">SLA guarantees</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">White-labeling options</span>
+</li>
+</ul>
+<button class="w-full font-label-md text-label-md bg-transparent border border-primary text-primary px-sm py-base rounded hover:bg-surface-container transition-colors duration-200">Contact Sales</button>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-xl px-gutter">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="font-h2 text-h2 text-primary text-center mb-lg">Frequently Asked Questions</h2>
+<div class="space-y-md">
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm border border-surface-variant">
+<h3 class="font-label-md text-label-md text-primary mb-sm">Can I switch plans later?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Absolutely. You can upgrade or downgrade your plan at any time. Prorated charges or credits will be applied to your account automatically.</p>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm border border-surface-variant">
+<h3 class="font-label-md text-label-md text-primary mb-sm">What payment methods do you accept?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We accept all major credit cards (Visa, MasterCard, American Express) and PayPal. For Enterprise plans, we can accommodate invoicing and wire transfers.</p>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm border border-surface-variant">
+<h3 class="font-label-md text-label-md text-primary mb-sm">Is there a discount for non-profits?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Yes, we offer special pricing for registered non-profit organizations and accredited educational institutions. Please contact our sales team with your details.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xl">school</span>
+</div>
+<span class="text-xl font-display font-bold">Momentum</span>
+</div>
+<p class="text-slate-400 leading-relaxed">Empowering educators and institutions with the tools they need to deliver world-class learning experiences.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Product</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Features</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Solutions</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Integrations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Company</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Legal</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-slate-500">
+<p>© 2024 Momentum Learning Systems. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Momentum LMS - Log In</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen flex items-center justify-center p-md font-body-md text-on-surface">
+<main class="w-full max-w-[440px] bg-surface-container-lowest border border-surface-variant rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.05)] p-md md:p-[32px] flex flex-col gap-md">
+<!-- Header -->
+<header class="text-center flex flex-col gap-sm mb-sm">
+<div class="flex justify-center mb-sm">
+<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-3xl" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+</div>
+<h1 class="font-h2 text-h2 text-primary tracking-tight">Momentum LMS</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Log in to continue your learning journey.</p>
+</header>
+<!-- Login Form -->
+<form id="loginForm" class="flex flex-col gap-sm">
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface" for="email">Email Address</label>
+<input class="border border-outline-variant rounded-lg px-sm py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors bg-surface-container-lowest" id="email" name="email" placeholder="student@university.edu" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="password">Password</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant hover:underline transition-colors" href="#">Forgot Password?</a>
+</div>
+<input class="border border-outline-variant rounded-lg px-sm py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors bg-surface-container-lowest" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+</div>
+<div class="flex items-center gap-sm mt-xs mb-sm">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary bg-surface-container-lowest cursor-pointer" id="remember" name="remember" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="remember">Remember me on this device</label>
+</div>
+<button id="loginBtn" class="bg-primary text-on-primary font-label-md text-label-md rounded-full py-sm hover:bg-on-primary-fixed transition-colors shadow-sm flex justify-center items-center gap-base" type="submit">
+                Log In
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="relative flex items-center py-sm">
+<div class="flex-grow border-t border-outline-variant"></div>
+<span class="flex-shrink-0 mx-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Or continue with</span>
+<div class="flex-grow border-t border-outline-variant"></div>
+</div>
+<!-- Social Logins -->
+<div class="flex flex-col gap-sm">
+<button class="flex items-center justify-center gap-sm border border-outline-variant rounded-full py-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors text-on-surface font-label-md text-label-md" type="button">
+<img alt="Google logo" class="w-5 h-5" data-alt="Google brand logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7I3VBPNaFx_kxR4fHHcZmiZwaVkUc2rKHHXRh_Dic7HQClSy2B2cfOdF9mrfP4kuahwsXizf6G06XqYyvX3E6y5fyIclv7nHKtKp36B4TiKSxL96PObyFFvECzYAYGc84W-K8jmqxBHxEGkY-cU6wZ8Lsayt7uZM7Tc6VlqCksw12lCvvNFrWElFtwtGb_2nE0s9HDtgR2rUbTBn4EZ5FDUFc_njhmt13LhDgp58_WjT_HzIZavL6Hi3vF8Duv6DSykXAFaRsfUo"/>
+                Log in with Google
+            </button>
+<button class="flex items-center justify-center gap-sm border border-outline-variant rounded-full py-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors text-on-surface font-label-md text-label-md" type="button">
+<img alt="LinkedIn logo" class="w-5 h-5" data-alt="LinkedIn brand logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnRnGBuUJVFNEjveITqcoI0SKyYlyg3bHEvtEDojgmWKXDtkfLFRi_IfhsAfaqozMXTlM7-4-Vw5xxUgJX9BSPX7dj1GiF6sW2nvkF4lsaSjmP5CvLAvzc-e_cp1jauPFzE53lNWa-uTi_7lxRD3qYtDCfPBqbaKTMgSkgpI9UtnL0ZaOi9bOnbRUB4_F9qvVdIE-LanxcV60R1RtR5Z8xThRkToWstZ7fruSd7BPtThl9pSWv1OPtA5YM5RLqA4J_g0tCV-eqvsc"/>
+                Log in with LinkedIn
+            </button>
+</div>
+<!-- Footer Link -->
+<div class="text-center mt-sm pt-sm border-t border-surface-variant">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Don't have an account yet? 
+                <a class="font-label-md text-label-md text-primary hover:text-on-primary-fixed-variant hover:underline transition-colors" href="signup.html">Create account</a>
+</p>
+</div>
+</main>
+<script>
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('loginBtn');
+    btn.disabled = true;
+    btn.innerHTML = 'Logging in...';
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    try {
+        const res = await fetch('/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        });
+        const data = await res.json();
+        
+        if (!res.ok) throw new Error(data.error || 'Something went wrong');
+        
+        window.location.href = 'dashboard.html';
+    } catch (err) {
+        alert(err.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = `Log In <span class="material-symbols-outlined text-sm">arrow_forward</span>`;
+    }
+});
+</script>
+</body></html>

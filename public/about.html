@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Momentum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<a href="/" class="text-2xl font-display font-bold text-primary tracking-tight">Momentum</a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="features.html">Features</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="pricing.html">Pricing</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="about.html">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-primary font-semibold hover:text-primary/80 transition-colors" onclick="window.location.href='login.html'">Log in</button>
+<button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" onclick="window.location.href='signup.html'">Get Started</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full max-w-[1280px] mx-auto px-8 py-20 flex flex-col items-center text-center">
+<h1 class="font-h1 text-[48px] md:text-[64px] leading-tight text-primary mb-6 max-w-4xl font-bold tracking-tight">Empowering Intellectual Growth Through Clarity</h1>
+<p class="font-body-lg text-[20px] text-on-surface-variant max-w-3xl mb-12 leading-relaxed">
+                Momentum was founded on the belief that education should be free from cognitive friction. We build tools that prioritize focus, enabling learners and educators to achieve profound progress.
+            </p>
+<div class="w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-xl border border-surface-variant relative group">
+<img alt="Modern university library with sun streaming through large windows, students focused on laptops at wooden desks" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern university library with sun streaming through large windows, students focused on laptops at wooden desks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpvUX3s8Bcd1V8WXLyBsp34PsYBHP8JEao_VYb5lAeBG80Z11a6vmZZkAMxKXCI3Mw9oJc6hIi-xgc44DoZZYY2vyyR6hQd1cvqKdVnBp4gNo5EtjE2uG1LJtEYzLAM_dckYFQYiAETFLTKIz_n89AMeAE34K5OT1k6BAlh-zu-ciaDrM7jMGexNC4Vk5xlghBCS89TYJouVoUYB3biKroZxdLXQtXi9bNv1DAJM_kWpDEA5CzB9HVmbC85absRzsl-JepkGzuto"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex items-end p-8">
+<span class="text-white font-label-md text-sm bg-secondary/90 backdrop-blur-md px-6 py-3 rounded-lg font-semibold tracking-wide uppercase">Our Origin Story</span>
+</div>
+</div>
+</section>
+<!-- Mission & Values Bento -->
+<section class="w-full bg-surface-container-lowest py-24">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mission Statement -->
+<div class="md:col-span-2 bg-surface rounded-2xl p-12 border border-surface-variant shadow-sm relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+<div class="absolute top-8 right-8 opacity-10 transition-transform duration-500 group-hover:scale-110">
+<span class="material-symbols-outlined text-9xl text-primary">school</span>
+</div>
+<h2 class="font-h2 text-4xl text-primary mb-6 relative z-10 font-bold">Our Mission</h2>
+<p class="font-body-lg text-xl text-on-surface-variant max-w-xl relative z-10 leading-relaxed">
+                            To architect a learning environment where academic excellence is the natural byproduct of a beautifully engineered platform. We remove the noise so you can focus on the signal.
+                        </p>
+</div>
+<!-- Value 1 -->
+<div class="bg-surface rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-fixed fill text-2xl">bolt</span>
+</div>
+<h3 class="font-h3 text-xl text-primary mb-3 font-semibold">Uncompromising Clarity</h3>
+<p class="font-body-sm text-base text-on-surface-variant leading-relaxed">
+                            Every interface is stripped of non-essential elements, creating a high-signal environment for deep work.
+                        </p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-fixed fill text-2xl">insights</span>
+</div>
+<h3 class="font-h3 text-xl text-primary mb-3 font-semibold">Measurable Progress</h3>
+<p class="font-body-sm text-base text-on-surface-variant leading-relaxed">
+                            Data is presented with academic rigor, ensuring learners always know exactly where they stand and where to go next.
+                        </p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-fixed fill text-2xl">verified_user</span>
+</div>
+<h3 class="font-h3 text-xl text-primary mb-3 font-semibold">Enduring Reliability</h3>
+<p class="font-body-sm text-base text-on-surface-variant leading-relaxed">
+                            Built on an architecture of trust. Our tools are as dependable as the institutions that rely on them.
+                        </p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface rounded-2xl p-8 border border-surface-variant shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container fill text-2xl">group</span>
+</div>
+<h3 class="font-h3 text-xl text-primary mb-3 font-semibold">Empowered Educators</h3>
+<p class="font-body-sm text-base text-on-surface-variant leading-relaxed">
+                            We provide instructors with intuitive tools that amplify their teaching capabilities rather than complicate them.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="w-full max-w-[1280px] mx-auto px-8 py-24">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-4xl text-primary mb-4 font-bold">Leadership</h2>
+<p class="font-body-lg text-xl text-on-surface-variant">The minds architecting the future of academic focus.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Leader Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant hover:shadow-xl transition-all duration-300 group">
+<div class="h-64 bg-surface-variant flex items-center justify-center relative overflow-hidden">
+<img alt="Professional portrait of male executive in modern office wearing dark suit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of male executive in modern office wearing dark suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFrwZo1Ir7aPii0p9YBfvFpQISqvdlMdl5HSTL8PY6aVLzapR1blcg_0lQbzkOIPC4qgCq0hdMbXXgE-iWl78VkVbg3xk2UbITum2uD1eYRilHPsmyDwCePKrB0XQsman7h9mOD5Sf9R1wEBSosalB8WpFBw_FIEjwNv7k7JHzSaoOTQLmwQ2QJ1KuULs3wlLGGnC7F4QJ066H5nrbFt72xGxvV-4cnJ48i9at4trRX_1THuYlwe8U-0N-HfxtR8nzndhzXPY3KrI"/>
+</div>
+<div class="p-6 text-center border-t border-surface-variant bg-white">
+<h3 class="font-h3 text-xl text-primary mb-2 font-bold">Eleanor Vance</h3>
+<p class="font-label-md text-sm text-secondary font-semibold">Chief Executive Officer</p>
+</div>
+</div>
+<!-- Leader Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant hover:shadow-xl transition-all duration-300 group">
+<div class="h-64 bg-surface-variant flex items-center justify-center relative overflow-hidden">
+<img alt="Professional portrait of female executive in modern office wearing dark blazer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of female executive in modern office wearing dark blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSnO91dIOGwADaIxfG7HSkCoWxoTUzd0bdmk2ig5wz6S-7s9ECz1UZVWoX9TKpuorpNRvzKjFpZPmTapKCoZ8hwv5zc3_xp0qxno4ZOdiV2BZ5z6XL1gF3vZbob9HhYep3SarBFZYE-iZYo0XH7EGhDZWJCGExebiZsUbChu9RXILO99_2UCUHiBxB0o_ZYP0GQ5pdo_VYwl4pXsp6RSxn-uK_fXwV3JFuSVk3w5LhWiqL7C95IW_RF8rfmsTLosyLXHCbMOjiCRc"/>
+</div>
+<div class="p-6 text-center border-t border-surface-variant bg-white">
+<h3 class="font-h3 text-xl text-primary mb-2 font-bold">Dr. Marcus Chen</h3>
+<p class="font-label-md text-sm text-secondary font-semibold">Head of Product</p>
+</div>
+</div>
+<!-- Leader Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant hover:shadow-xl transition-all duration-300 group">
+<div class="h-64 bg-surface-variant flex items-center justify-center relative overflow-hidden">
+<img alt="Professional portrait of male director in modern office looking thoughtful" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of male director in modern office looking thoughtful" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWYfslijVzB2oW_jsq6vTjazHJQ-xjB9foPnhZXmClwPKcg8wF2QETw4z42dfRi2ZEFr27c4Vm5Tf250TbKyAaiR-Yff9RY8_t8wrrFMfI5CyZG5y0ntKdzjnFrxkVaYwzkU1GWLb2AcO5kYs4m6EBdG9CR0NF4O2fhv1fvx8vZy3is38JGxDQDmpIzb93X7lLbjjCzluuUXjmXfzjfpK9xZcfrdql4wJf1nYNuLyUjJWYsmKFqiRYHkyPJi0dj3oeAXmGYAdn0p8"/>
+</div>
+<div class="p-6 text-center border-t border-surface-variant bg-white">
+<h3 class="font-h3 text-xl text-primary mb-2 font-bold">Sarah Jenkins</h3>
+<p class="font-label-md text-sm text-secondary font-semibold">VP of Engineering</p>
+</div>
+</div>
+<!-- Leader Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-variant hover:shadow-xl transition-all duration-300 group">
+<div class="h-64 bg-surface-variant flex items-center justify-center relative overflow-hidden">
+<img alt="Professional portrait of female academic leader smiling warmly" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of female academic leader smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmjGQu83zbPWUMbgA1Mx-ltP-kGTNdP3hzDXKfZXI-0BwMO6f4tTfUkWh2kbCUBmvGOluBJXXzDJNjk8CNsO41ZoLefcArDgVAksDKnxT9b4KYPxRjfLkbNA8Spm-XxKUF4r0CF-xom0_oYXHVBTMRVV0amDLHby5IjtzSC_epKRWQdZClfW-rCqh210DJsP4UIc7gmk1LcsEM89NK9PtiWRnFtHU-JJXewqY-l_XyPls8LmL7oJdPfcgmHPpXiNAEvoEFL3DnhkM"/>
+</div>
+<div class="p-6 text-center border-t border-surface-variant bg-white">
+<h3 class="font-h3 text-xl text-primary mb-2 font-bold">Dr. Alistair Reed</h3>
+<p class="font-label-md text-sm text-secondary font-semibold">Director of Pedagogy</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 text-blue-900 dark:text-blue-400 font-inter text-sm leading-relaxed w-full py-16 border-t border-slate-200 dark:border-slate-800 transition-all duration-300 mt-auto">
+<div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full">
+<div class="col-span-1 md:col-span-2 lg:col-span-4 mb-8">
+<div class="text-lg font-extrabold text-blue-900 dark:text-slate-100 mb-4">
+                    Momentum
+                </div>
+<p class="text-slate-500 dark:text-slate-400 max-w-md">
+                    © 2024 Momentum Learning Systems. Empowering global education through clarity and progress.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 transition-all duration-300" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 transition-all duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 transition-all duration-300" href="#">Cookie Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 transition-all duration-300" href="#">Security</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline underline-offset-4 transition-all duration-300" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

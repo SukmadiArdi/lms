@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Momentum LMS - Elevate Your Learning Journey</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-[64px]">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<a href="/" class="text-2xl font-display font-bold text-primary tracking-tight">Momentum</a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="features.html">Features</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="pricing.html">Pricing</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="about.html">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-primary font-semibold hover:text-primary/80 transition-colors" onclick="window.location.href='login.html'">Log in</button>
+<button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" onclick="window.location.href='signup.html'">Get Started</button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-6 py-xl md:py-[120px] flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1 space-y-md">
+<h1 class="font-h1 text-h1 text-primary">Elevate Your Learning Journey</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[540px]">
+                    Empower your future with world-class education. Access top-tier courses, expert instructors, and a seamless learning experience designed for your success.
+                </p>
+<div class="pt-sm flex flex-wrap gap-sm">
+<a class="inline-flex items-center justify-center bg-secondary text-on-secondary font-label-md py-3 px-6 rounded-DEFAULT shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:bg-secondary/90 transition-colors duration-200" href="signup.html">
+                        Get Started
+                        <span class="material-symbols-outlined ml-2" style="font-size: 20px;">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent border border-outline text-on-surface font-label-md py-3 px-6 rounded-DEFAULT hover:bg-surface-container-low transition-colors duration-200" href="dashboard.html">
+                        View Courses
+                    </a>
+</div>
+<div class="pt-md flex items-center gap-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined filled text-secondary-container" style="font-size: 16px;">check_circle</span>
+                        No credit card required
+                    </div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined filled text-secondary-container" style="font-size: 16px;">check_circle</span>
+                        14-day free trial
+                    </div>
+</div>
+</div>
+<div class="flex-1 w-full mt-lg md:mt-0">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low border border-surface-container shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+<img alt="Students collaborating on laptops in a bright, modern learning space" class="w-full h-full object-cover" data-alt="Students collaborating on laptops in a bright, modern learning space with warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM0PdzOPJaY4DkfghEoG_K_J96ZFzlU4veRZ2aUHPuvtLcVgazxkL_n6n4gihglrhv9z0IaFSv3k4y03TCZPCxsevc5KZXwQsjDhURB5_mT_spb6icX0oEDXf3lNG6IhhUW4dU_hp7cKt1OQYRkxlD_22GM7LmD8bDu_WqS0T6-mmnptPtFuC0xFEK4IJ_d-8sf6wGiYmbv2myvZuXJyTOwOQwX2p7U4Mt1PmaSOdRC8xLiMHRSZAZ9lZxBhxdU2Cada2AV-v14u4"/>
+<!-- Decorative overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="bg-surface-bright py-xl border-y border-surface-container">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="text-center mb-lg">
+<h2 class="font-h2 text-h2 text-primary">Everything you need to succeed</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-sm max-w-[600px] mx-auto">
+                        Our platform provides a comprehensive suite of tools designed to optimize your learning experience and track your achievements.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Feature 1 -->
+<div class="bg-white p-md rounded-lg border border-surface-container shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary-fixed rounded-DEFAULT flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined filled" style="font-size: 24px;">auto_stories</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Distribusi Materi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Access structured, high-quality learning materials anytime, anywhere. Downloadable resources for offline study.
+                        </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-white p-md rounded-lg border border-surface-container shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary-fixed rounded-DEFAULT flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined filled" style="font-size: 24px;">monitoring</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Monitoring Progress</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Track your learning journey with detailed analytics. Set goals and monitor your course completion rates visually.
+                        </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-white p-md rounded-lg border border-surface-container shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary-fixed rounded-DEFAULT flex items-center justify-center mb-sm text-primary">
+<span class="material-symbols-outlined filled" style="font-size: 24px;">workspace_premium</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">E-Certificate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Earn industry-recognized certificates upon course completion. Easily shareable on LinkedIn and your resume.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Course List Section -->
+<section class="max-w-[1280px] mx-auto px-6 py-xl">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-h2 text-h2 text-primary">Popular Courses</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Explore our most sought-after programs.</p>
+</div>
+<a class="hidden md:inline-flex items-center text-secondary font-label-md hover:underline" href="#">
+                    View all courses <span class="material-symbols-outlined ml-1" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Course Card 1 -->
+<div class="bg-white rounded-lg border border-surface-container overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300 flex flex-col">
+<div class="relative h-[200px] w-full">
+<img alt="Data science visualization on a computer screen" class="w-full h-full object-cover" data-alt="Abstract data visualization on dark screen with vibrant colorful charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnejm3WOkmbOA_7wc9zzsm3A7K9RC8VkQq3IjJFJUmu696XFsJdLxUDvnH4PV9UFyvvynDtp0vZvhivzidGxACPS4CRe5f9vKlUpi9CtZskuX-GJQArsZN6O7mbDZ6k7zOi9URfI5xN0oxOFA266yMNhSFHpGGDRwE9KH71HcRfvX7ZMFe3xGZAeYM5veQo9PS4QDB_RQeC0TfER1pjh64hV4NnH_Cb_FEUqqpDvh56MuQSt1HOHmik-eksdSZRH2QNAAImrug_FQ"/>
+<div class="absolute top-sm left-sm bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm py-1 px-2 rounded-[2px]">Data Science</div>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-h3 text-h3 text-primary mb-xs line-clamp-2">Advanced Machine Learning &amp; AI</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md flex-1">Master complex algorithms and build predictive models with Python.</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-sm mt-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Instructor portrait" class="w-full h-full object-cover" data-alt="Professional headshot of a male instructor with glasses smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2qkM0_UA_EMfz18YnlqWx3Fv1jeQZQRnlE5jMIhMK78i0icrApBENZ68UQyMyfCjxP_YqWz12gYYNhU6d4sxMp4KaU8K6CUSkjL3RnHw9zbav-egKKJj9OPfEGOV8xsyOckoceXk6KV4O4cQG6K7lZjtCWGCfQ2XBHPjwz6biX13IIm6YfckUlyrPA_CZey9ghbbvpdHjI4oabGHGtRvXwA8zVKOLy9lcHhC19Lf7GBf82FhYqTA5iTJsCUuQRUpkBNfzrv5s0M"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Dr. Alan Turing</span>
+</div>
+<div class="flex items-center text-amber-500 font-label-sm">
+<span class="material-symbols-outlined filled mr-1" style="font-size: 16px;">star</span>
+                                4.9
+                            </div>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-white rounded-lg border border-surface-container overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300 flex flex-col">
+<div class="relative h-[200px] w-full">
+<img alt="Business planning and strategy documents" class="w-full h-full object-cover" data-alt="Close up of business charts, pen and coffee on a wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEZjQaAaQWOC4esYQ5Wtk-12mTKh35YpVllEEP9BucKukc2krivnzIE8Z_w6p3RELb2jo818PSmny0Wrtu3RHqgjbzf7ZtVP-GXvNIkb7TStcAR8IkEJbvfEgenAYUGqtUEb8qvuZZGnk4oot8mWAkGBS3dj1SBzoyF-6x8AD26lRb505s8OaozLhHuWYLQ2mT9U_xr8DVzbuXup2ykDpAZaoMvwYrp7BgIb5_-O1e7tNmVvaKKQfZ6jreafkO_flObtRxahkwzY4"/>
+<div class="absolute top-sm left-sm bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm py-1 px-2 rounded-[2px]">Business</div>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-h3 text-h3 text-primary mb-xs line-clamp-2">Strategic Business Management</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md flex-1">Develop leadership skills and strategic thinking for modern enterprises.</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-sm mt-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Instructor portrait" class="w-full h-full object-cover" data-alt="Professional headshot of a female business instructor smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrj7BbsN2rKixH3muSc1tyAjyggFWJSBcwse4ntEX7HL9P3ZFyE9T3uSN7V4RkhGtBxF0wDAuqb3lq4fccKwEEsxJU4Yxxxr4yz1pacibjPlWPAwKNA77bQ5HcGRx24l315HzOeiU99Rh5A1pkA027PAqiKrHMwcAvhPuTgoZQl7EyIAZVC1i07mbygyEo8fxSUDpy3g4gC6dQM2kUqJXuGUyEOHLXZaCtOfFqa5kTn6uTSIISJKyZY9WBBuYh68s6TqwFApfPxLE"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Sarah Jenkins, MBA</span>
+</div>
+<div class="flex items-center text-amber-500 font-label-sm">
+<span class="material-symbols-outlined filled mr-1" style="font-size: 16px;">star</span>
+                                4.8
+                            </div>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-white rounded-lg border border-surface-container overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300 flex flex-col">
+<div class="relative h-[200px] w-full">
+<img alt="Artist working on a digital tablet" class="w-full h-full object-cover" data-alt="Close up of a hand drawing with stylus on a digital tablet screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxbRDfX2gDKzDQNIrS8EwXW5zBtEIzMK-nttP-nYzE-lZVgeRC6BOulY39N384NP_9rUq6Qs28pHLNOwkW1dHLLtZvypOiPpFJSpewhyvIL2jiLVGjSl4glssDOs0ZiZuyJ0A8NhHHiCDJhhXGUHrBRvnyCmhC2_bOuMMq5EgIkKoplLkK1qIC3rryWgWrBtj4_8Q60u3_fg4G5VWjAeL94fGpNCZUnswqgBB8QexKi63O_npqy7N9iS730Ok7nQE6R2ler_AvHBM"/>
+<div class="absolute top-sm left-sm bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm py-1 px-2 rounded-[2px]">Arts</div>
+</div>
+<div class="p-md flex flex-col flex-1">
+<h3 class="font-h3 text-h3 text-primary mb-xs line-clamp-2">Digital Illustration Mastery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md flex-1">Learn advanced techniques for creating stunning digital artwork from scratch.</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-sm mt-auto">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Instructor portrait" class="w-full h-full object-cover" data-alt="Portrait of a young male artist with casual clothing in studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA54notqB_JLrYMZQ8_Mm8p_Moy-dzNjzNA1QWyNQWwa756BGpMISBnK5oMX0LVKMqdCjxNQc_h-RZIyK1KqNAvL9exO-IV70EQQO9dqVKZsEF0rHyw7kx4DMCdYTHJRwkfIMU5wvpJyHEdIhxcYDzu5Q1NFN2fYNbxFK-r-6TmWHQb6D_ywozTc0jklyK8TMKfa_uAXVV2P17H-hHdm4i111FpGO_rVraSYkuPMwcdk_lbMIK_onjiSaH1tHQgjw1ebg02Tra3BM"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Marcus Chen</span>
+</div>
+<div class="flex items-center text-amber-500 font-label-sm">
+<span class="material-symbols-outlined filled mr-1" style="font-size: 16px;">star</span>
+                                4.9
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-md text-center md:hidden">
+<a class="inline-flex items-center text-secondary font-label-md hover:underline" href="#">
+                    View all courses <span class="material-symbols-outlined ml-1" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-surface-container font-['Inter'] text-sm text-slate-500 w-full rounded-none">
+<div class="max-w-[1280px] mx-auto py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-[#0D2B5B]">Momentum LMS</span>
+<span class="text-slate-500">© 2024 Momentum Learning Systems. All rights reserved.</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-6 mt-4 md:mt-0">
+<a class="text-slate-500 hover:text-[#0D2B5B] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#0D2B5B] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#0D2B5B] transition-colors" href="#">Contact Support</a>
+<a class="text-slate-500 hover:text-[#0D2B5B] transition-colors" href="#">Security</a>
+</nav>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Player - Momentum LMS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-white dark:bg-slate-950 flex justify-between items-center px-6 h-16 w-full mx-auto fixed full-width top-0 z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-[#0D2B5B] dark:text-white">Momentum LMS</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-md text-label-md text-[#0D2B5B] border border-[#0D2B5B] rounded px-4 py-2 hover:bg-slate-50 transition-colors" onclick="window.location.href='my-courses.html'">
+                Exit Player
+            </button>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-colors duration-200 active:scale-95 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-slate-500 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-colors duration-200 active:scale-95 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant object-cover" data-alt="Professional headshot of a young man smiling slightly, well-lit studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo5vCo4P_K_X0cB3UmGoI1hsOFEufyDFEpPH2YrnNXNR1s0600c_ZD5rkjyFXJs4TRsqBDTZj5hnFF_8_MCTn5P_GZSMFcYpYT7HnZAxBBikE6-QalWvkOwr6ZnWj9orFAu8JeTNeFu_WWc3XS1khWHnWwfelJaSJd6HofgtDDo_EYo_JBBHclZiNaB9-RnuzdCA84ygceNu4T_OgJgpZwbAgCnYHsVIzsYdBIUSqsXwL9AZ_kdCskH0rk8kqINaNMribhXCxJUiE"/>
+</div>
+</div>
+</nav>
+<!-- Shell Container -->
+<div class="flex pt-16 h-screen overflow-hidden">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col w-80 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flat no-shadows flex-shrink-0 h-full overflow-y-auto">
+<!-- Header -->
+<div class="p-6 border-b border-slate-200 dark:border-slate-800">
+<div class="w-full h-32 mb-4 rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="Course thumbnail" class="w-full h-full object-cover" data-alt="Abstract graphic design composition with blue and teal geometric shapes overlapping seamlessly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI59oldoA3Cli8X3BuJoSFIm0lZBpjGPLDSOPaxqVVNrfb4IGYhixdRgkPq_JjtrvG7_qHHxuE0AlRpD2C2VbjGDs-EdDzq_0mglst7RffUNXevzCR255M77Drzhcn2qSPCW9jewpB9hlffsQy_fb-Y_w_R0EIa8m1Ok25WzhiQ-9cYR9qzI0JksUUOEdvPW_eEI-YSH_LXAaM-S4WO-W2hr_-efjR1TYV64Iwmg1atQV7_Op4Ma-j8mrKHMWMJTnEs9qcI5MARyo"/>
+</div>
+<h2 class="font-h3 text-h3 text-[#0D2B5B] dark:text-blue-400 mb-1">UI Design Mastery</h2>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">12% Completed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1/8 Modules</span>
+</div>
+<div class="w-full h-1 bg-surface-variant mt-2 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[12%] rounded-full"></div>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<nav class="flex-1 py-4 flex flex-col">
+<a class="flex items-center gap-3 px-6 py-4 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/30 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-all duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+<span class="font-label-md text-label-md">Introduction</span>
+<span class="material-symbols-outlined ml-auto text-primary text-[18px]">check_circle</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-4 bg-slate-50 dark:bg-slate-800/50 text-[#0D2B5B] dark:text-blue-400 font-semibold border-l-4 border-[#0D2B5B] cursor-pointer transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-md text-label-md">Module 1: Foundations</span>
+</a>
+<div class="flex flex-col px-6 py-2 bg-slate-50 border-l-4 border-[#0D2B5B]">
+<div class="pl-9 py-2 flex items-center justify-between font-body-sm text-body-sm text-on-surface cursor-pointer hover:text-primary">
+<span>1.1 What is UI Design?</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<div class="pl-9 py-2 flex items-center justify-between font-label-md text-label-md text-primary cursor-pointer">
+<span>1.2 Visual Hierarchy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12:34</span>
+</div>
+<div class="pl-9 py-2 flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant cursor-pointer hover:text-on-surface">
+<span>1.3 Typography Basics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">08:15</span>
+</div>
+</div>
+<a class="flex items-center gap-3 px-6 py-4 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/30 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-all duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label-md text-label-md">Module 2: Strategy</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-4 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/30 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-all duration-200 cursor-pointer mt-auto" href="#">
+<span class="material-symbols-outlined" data-icon="folder">folder</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-4 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/30 hover:text-[#0D2B5B] dark:hover:text-blue-300 transition-all duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+<span class="font-label-md text-label-md">Discussion</span>
+</a>
+</nav>
+<div class="p-6 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded hover:bg-primary-container/90 transition-colors">
+                    View Certificate
+                </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto bg-surface-container-lowest">
+<div class="max-w-[1024px] mx-auto p-8 pb-24">
+<!-- Breadcrumb -->
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-6">
+<span>Module 1: Foundations</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-medium">1.2 Visual Hierarchy</span>
+</div>
+<!-- Video Player Container -->
+<div class="w-full aspect-video bg-tertiary rounded-xl overflow-hidden relative shadow-[0_4px_12px_rgba(0,0,0,0.05)] border border-outline-variant mb-8 group">
+<img alt="Video frame" class="w-full h-full object-cover opacity-90" data-alt="High-resolution presentation slide showing a wireframe diagram with text about visual hierarchy principles on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLNPOEBcYWdrGIEvz3oBr0AMRyhZWW0A_qnOkDitE08NAebcKmdazyG1Fr78mbWY7iu6YKnR1aPppnyYa6eos40YR3jz_hW8LgX82g86mUg9bjR3p7e7B8KWfj5d73t5L-YzZaFbt6zVvF2B6thtDd2YqxR9XrWT18vCn81WNxdg-cCqUhi-vmNTRxaoda3hlZiWHdVsfNv7GpLnL1hZUz8STvFm_8XgXCwIi3sFjUz5Yk2Wn-zEKLM8VpHCFKjrw5kTvkLDnLW4g"/>
+<!-- Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors cursor-pointer">
+<button class="w-20 h-20 bg-primary-container/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Fake Player Controls -->
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent flex flex-col gap-2">
+<!-- Progress Bar -->
+<div class="w-full h-1.5 bg-white/30 rounded-full overflow-hidden cursor-pointer">
+<div class="h-full bg-primary-fixed w-[28%] rounded-full relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full shadow"></div>
+</div>
+</div>
+<!-- Controls Row -->
+<div class="flex items-center justify-between text-white">
+<div class="flex items-center gap-4">
+<button class="hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span></button>
+<button class="hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined" data-icon="volume_up">volume_up</span></button>
+<span class="font-label-sm text-label-sm opacity-90 tracking-wide">12:34 / 45:00</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined" data-icon="closed_caption">closed_caption</span></button>
+<button class="hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined" data-icon="settings">settings</span></button>
+<button class="hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined" data-icon="fullscreen">fullscreen</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Details & Actions -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-6 pb-8 border-b border-surface-variant">
+<div class="flex-1">
+<h1 class="font-h2 text-h2 text-on-surface mb-2">Understanding Visual Hierarchy</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Master the art of guiding the user's eye through strategic placement, sizing, and contrast.</p>
+</div>
+<div class="flex items-center gap-4 flex-shrink-0">
+<button class="flex items-center gap-2 px-6 py-2.5 rounded border border-outline text-on-surface hover:bg-surface-variant transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="chevron_left">chevron_left</span> Previous
+                        </button>
+<button class="flex items-center gap-2 px-6 py-2.5 rounded bg-primary-container text-on-primary-container hover:bg-primary-container/90 transition-colors font-label-md text-label-md shadow-sm" onclick="window.location.href='quiz.html'">
+                            Next Lesson <span class="material-symbols-outlined text-[18px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Content Tabs -->
+<div class="pt-8">
+<div class="flex gap-8 border-b border-surface-variant mb-8">
+<button class="pb-4 font-label-md text-label-md text-primary-container border-b-2 border-primary-container">Description</button>
+<button class="pb-4 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Resources (2)</button>
+<button class="pb-4 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Discussion Forum</button>
+</div>
+<article class="font-body-lg text-body-lg text-on-surface-variant max-w-[800px] space-y-6">
+<p>In this lesson, we explore the fundamental principles of visual hierarchy and how it directly impacts user engagement and comprehension. You'll learn to manipulate size, color, contrast, and spacing to create intuitive and scannable interfaces.</p>
+<h3 class="font-h3 text-h3 text-on-surface mt-8 mb-4">Key Learning Objectives</h3>
+<ul class="list-none space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span><strong>The Role of Scale:</strong> Understand how establishing dominance through proportional sizing guides the user journey.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span><strong>Color Weight &amp; Contrast:</strong> Utilize deep primary colors against neutral backgrounds to draw attention to critical actions.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check" style="font-variation-settings: 'FILL' 1;">check</span>
+<span><strong>Whitespace as an Element:</strong> Learn why negative space is crucial for grouping related content and reducing cognitive load.</span>
+</li>
+</ul>
+<div class="bg-surface p-6 rounded-lg border border-outline-variant mt-8 flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="lightbulb" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Pro Tip for Designers</h4>
+<p class="font-body-sm text-body-sm">Before adding more color to highlight an element, try increasing the whitespace around it first. Often, isolation is stronger than decoration.</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+</div>
+</body></html>

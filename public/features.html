@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Features - Momentum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#004493",
+                        "inverse-surface": "#293138",
+                        "outline": "#747780",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-container": "#7b94ca",
+                        "tertiary": "#101921",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "surface-bright": "#f6faff",
+                        "on-tertiary-fixed": "#141c25",
+                        "surface-container-highest": "#dbe4ed",
+                        "surface-container-low": "#ecf5fe",
+                        "primary-container": "#0d2b5b",
+                        "on-background": "#141d23",
+                        "on-tertiary-container": "#8c949f",
+                        "inverse-on-surface": "#e9f2fb",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#aec6ff",
+                        "background": "#f6faff",
+                        "tertiary-fixed-dim": "#bfc7d3",
+                        "tertiary-fixed": "#dbe3ef",
+                        "surface-dim": "#d2dbe4",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#141d23",
+                        "on-tertiary-fixed-variant": "#3f4851",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#44474f",
+                        "surface": "#f6faff",
+                        "tertiary-container": "#252d36",
+                        "on-secondary-container": "#fefcff",
+                        "surface-container": "#e6eff8",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c6d0",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#0059bb",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e0e9f2",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2c4677",
+                        "on-primary-fixed": "#001a42",
+                        "surface-tint": "#455e90",
+                        "primary": "#00163b",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#dbe4ed",
+                        "secondary-container": "#0070ea"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<a href="/" class="text-2xl font-display font-bold text-primary tracking-tight">Momentum</a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="features.html">Features</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="pricing.html">Pricing</a>
+<a class="text-slate-600 hover:text-primary font-medium transition-colors" href="about.html">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-primary font-semibold hover:text-primary/80 transition-colors" onclick="window.location.href='login.html'">Log in</button>
+<button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" onclick="window.location.href='signup.html'">Get Started</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-8 py-xl flex flex-col gap-xl">
+<!-- Hero Section -->
+<section class="text-center max-w-3xl mx-auto space-y-md">
+<h1 class="font-h1 text-h1 text-primary">Empowering Academic Excellence</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Discover the powerful features designed to streamline education, enhance student engagement, and provide actionable insights for institutions.</p>
+</section>
+<!-- Bento Grid Features -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Feature 1: Distribusi Materi -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest rounded-xl p-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-primary-fixed-dim/20 to-transparent -z-10 group-hover:from-primary-fixed-dim/30 transition-colors"></div>
+<div class="flex flex-col gap-md">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="library_books" data-weight="fill">library_books</span>
+</div>
+<div class="space-y-sm">
+<h3 class="font-h3 text-h3 text-primary">Distribusi Materi Otomatis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Seamlessly deliver course materials, assignments, and reading lists to students automatically based on predefined schedules or progress milestones. Ensure everyone has the right resources at the exact right time without manual intervention.</p>
+</div>
+</div>
+</div>
+<!-- Feature 2: Progress Monitoring -->
+<div class="col-span-1 bg-surface-container-lowest rounded-xl p-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col gap-md">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="monitoring" data-weight="fill">monitoring</span>
+</div>
+<div class="space-y-sm">
+<h3 class="font-h3 text-h3 text-primary">Real-time Progress Monitoring</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Track student engagement, assignment completion, and assessment scores instantly. Identify areas where students might be struggling and intervene early.</p>
+</div>
+</div>
+<!-- Feature 3: E-Certificate -->
+<div class="col-span-1 bg-surface-container-lowest rounded-xl p-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col gap-md">
+<div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="workspace_premium" data-weight="fill">workspace_premium</span>
+</div>
+<div class="space-y-sm">
+<h3 class="font-h3 text-h3 text-primary">E-Certificate Generation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Automatically generate and distribute verifiable digital certificates upon course completion. Motivate learners with immediate recognition of their achievements.</p>
+</div>
+</div>
+<!-- Feature 4: Interactive Assessments -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest rounded-xl p-lg border border-outline-variant shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute left-0 top-0 w-1/3 h-full bg-gradient-to-r from-secondary-fixed-dim/20 to-transparent -z-10 group-hover:from-secondary-fixed-dim/30 transition-colors"></div>
+<div class="flex flex-col gap-md">
+<div class="w-12 h-12 bg-surface-tint text-on-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="quiz" data-weight="fill">quiz</span>
+</div>
+<div class="space-y-sm">
+<h3 class="font-h3 text-h3 text-primary">Interactive Assessments &amp; Quizzes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Create engaging quizzes with various question types, automated grading, and instant feedback. Foster a dynamic learning environment that tests comprehension actively rather than passively.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Proposition Section -->
+<section class="bg-surface-container py-xl px-lg rounded-xl flex flex-col md:flex-row gap-xl items-center border border-outline-variant">
+<div class="flex-1 space-y-md">
+<h2 class="font-h2 text-h2 text-primary">Built for Institutions, Designed for Students</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Momentum bridges the gap between administrative efficiency and optimal learning experiences. We provide the tools necessary to manage education at scale without losing the personal touch.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">See Demo</button>
+<button class="border border-primary text-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-primary-fixed transition-colors">Contact Sales</button>
+</div>
+</div>
+<div class="flex-1 w-full h-[300px] rounded-lg overflow-hidden relative shadow-sm">
+<img alt="Students collaborating in a modern university library with warm natural lighting" class="object-cover w-full h-full" data-alt="Students collaborating in a modern university library with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxdosT3c0VzyXVPXeAcyd4BHsJ_D2qukwXpVzK6QxNnOV3xB4ODOwCo32QAHvsor0DLzLeXjgZ4y2A1lp55Pp59-USnwcKPadfdTyN7i5T1KDp01_Sl9b-3wYzm_vIIJUq_ZeArRYnIuhe5FidS6gLn2FLRYq7aSXw5hLnd-yMWahcHyPBNXjrfqted3LpaPjKzN3I-GS4IDZ48HrQmM-xYtLvrMSNOGGEclJCKWgYe73joZ_OFQpeq4DnmfcxiDPUA5UUTGT9QtI"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container font-inter text-sm w-full py-16 transition-all duration-300 mt-auto">
+<div class="max-w-container-max mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full">
+<div class="space-y-4">
+<span class="text-lg font-extrabold text-primary">Momentum</span>
+<p class="text-on-surface-variant">© 2024 Momentum Learning Systems. Empowering global education through clarity and progress.</p>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Contact Support</a>
+<a class="text-on-surface-variant hover:text-primary underline underline-offset-4 transition-colors" href="#">Security</a>
+</div>
+</div>
+</footer>
+</body></html>
